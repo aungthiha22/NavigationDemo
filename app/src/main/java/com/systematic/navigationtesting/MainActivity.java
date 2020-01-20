@@ -1,5 +1,6 @@
 package com.systematic.navigationtesting;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -13,6 +14,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.systematic.navigationtesting.activity.LoginActivity;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -88,6 +90,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_home) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+
 
         } else if (id == R.id.nav_slideshow) {
 
